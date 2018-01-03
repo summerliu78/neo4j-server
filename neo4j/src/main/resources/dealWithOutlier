@@ -1,0 +1,23 @@
+# 同时存在p0086和cpc的情况,但是后面发现并没有,暂时不做判断
+map(x => {
+      if (x.contains("p0086")) {
+        val y = x.replace("p0086", "p")
+        if (y.contains(";cpc")) y.replace(";cpc", "") else y
+      } else if (x.contains("p86")) {
+        val y = x.replace("p86", "p")
+        if (y.contains(";cpc")) y.replace(";cpc", "") else y
+      } else if (x.contains(";cpc")) {
+        x.replace(";cpc", "")
+      } else x })
+
+# 另一种各种匹配
+map {
+    case ct if ct.contains("p0086") => ct.replace("p0086","p")
+    case ct if ct.contains("p86") => ct.replace("p86","p")
+    case ct if ct.contains(";cpc") => ct.replace(";cpc","")
+    case ct if ct.contains("p(") => ct.replaceAll("p\\([0-9]*\\)","p")
+    case x => x
+  }
+
+# 现在只对符合11位的过滤出来
+

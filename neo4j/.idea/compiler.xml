@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ink" />
+        <module name="ink-spark2.0" />
+        <module name="neo4j-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ink" target="1.8" />
+      <module name="ink-spark2.0" target="1.8" />
+      <module name="neo4j-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

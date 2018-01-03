@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ink.iml" filepath="$PROJECT_DIR$/ink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ink-spark2.0.iml" filepath="$PROJECT_DIR$/ink-spark2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neo4j-service.iml" filepath="$PROJECT_DIR$/neo4j-service.iml" />
+    </modules>
+  </component>
+</project>
